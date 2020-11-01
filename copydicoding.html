@@ -1,0 +1,426 @@
+<!DOCTYPE hhtml>
+	<html>
+		<head>
+			<title> Home |  Dicoding Indonesia</title>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+			<link rel="shortcut icon" href="img/logokecil.png">
+			<style>
+				#pengumuman-bar{
+					display:flex;
+					justify-content:center;
+					align-items:center;
+					background-color:purple;
+					height:40px;
+					width:100%;
+				}
+				#awal{
+					display:flex;
+					flex-direction:column;
+					height:100vh;
+					text-align:center;
+				}
+				#judul{
+					margin-top:90px;
+					margin-bottom:0px;
+					font-size:45px;
+				}
+				#program{
+					background-color:gray;
+					text-align:center;
+					padding: 30px;
+				}
+				#program section{
+					margin:20px 25% 20px 25%;
+					display:grid;
+					grid-template:repeat(1,1fr)/repeat(2,1fr);
+					grid-column-gap:10px;
+					justify-items:center;
+				}
+				.projek{
+					display:flex;
+					flex-direction:column;
+					align-items:center;
+					background-color:white;
+					width: auto;
+					border-radius:5px;
+					height:140px;
+					overflow:hidden;
+				}
+				.projek img{
+					padding:20px;
+					align-items:center;
+				}
+				#jcard{
+					text-align:center;
+					padding:30px;
+				}
+				#dcard{
+					margin:15px 5% 15px 5%;
+					display:grid;
+					grid-template:repeat(1,1fr)/repeat(4,1fr);
+					grid-column-gap:10px;
+					justify-items:center;
+					text-align:center;
+				}
+				#partner{
+					margin:20px 5% 20px 5%;
+					margin-top:50px;
+					display:grid;
+					grid-template:repeat(2,1fr)/repeat(4,1fr);
+					grid-column-gap:50px;
+					grid-row-gap:50px;
+					justify-items:center;
+				}
+				#dcard2{
+					margin:15px 9% 15px 9%;
+					display:grid;
+					grid-template:repeat(4,1fr)/repeat(3,1fr);
+					grid-row-gap:45px;
+					justify-items:center;
+					text-align:left;
+				}
+				#buatakun{
+					background-color:pink;
+					justify-items:center;
+					align-items:center;
+					padding:90px;
+					text-align:center;
+				}
+				#foot{
+					margin:15px 25% 15px 25%;
+					display:grid;
+					grid-template:repeat(1,1fr)/repeat(4,1fr);
+					grid-column-gap:5px;
+					justify-items:left;
+					text-align:left;
+				}
+				footer p a{
+					line-height: 30px;
+					color:gray;
+				}
+				footer p b{
+					line-height: 50px;
+					color:gray;
+				}
+				#cright{
+					background-color:gray;
+					justify-content:center;
+					align-items:center;
+					height:60px;
+					padding-top:15px;
+				}
+				#cright a{
+					color:pink;
+					font-size:18px;
+				}
+				.card-link{
+					color:pink;
+				}
+			</style>
+		</head>
+		<body>
+			<div id="pengumuman-bar">
+				<span class="text-light" style="opacity: 0.8; margin-right:10px">
+					Dicoding Developer Coaching - LIVE setiap Selasa Malam untuk menjawab semua pertanyaanmu di kelas Dicoding Academy
+				</span>
+				<a class="text-white" href="https://www.dicoding.com/events/list?criteria=name&q=Coaching&order_by=newest" target="_blank">
+					<em style="margin-left:10px">Lihat selengkapnya →</em>
+				</a>
+			</div>
+			<div style="background-image: url(img/background.jpg);background-position:center top;">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+				<a class="navbar-brand" href="#">
+					<img class="navbar-brand" src="img/logonavbar.png" style="margin-left:100px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Academy
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Challenge
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Event
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Job
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Developer
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0" style="margin-right:100px;">
+						<button class="btn btn-outline-secondary my-2 my-sm-1" type="submit" style="margin-right:5px;">Daftar</button>
+						<button class="btn btn-danger" type="submit" style="margin-left:5px;">Masuk</button>
+					</form>
+				</div>
+			</nav>
+			<header>
+				<div id="awal" class="text-white">
+					<p id="judul">Bangun Karirmu Sebagai Developer Profesional</p>
+					<p>Jadilah tuan rumah di negeri sendiri dengan belajar langsung dari para inovator dan developer expert</p>
+				</div>
+				<div id="program">
+					<h2>Program Kami</h2>
+					<section>
+					<div class="projek">
+						<a href="#" target="_blank"><img src="img/img1.png" width="260"></a>
+					</div>
+					<div class="projek">
+						<a href="#" target="_blank"><img src="img/img2.png"></a>
+					</div>
+					</section>
+				</div>
+			</header>
+			</div>
+			<main>
+				<div id="jcard">
+					<h1 style="margin-top:20px;">4 Pilar yang Dapat Kamu Manfaatkan</h1>
+					<p style="margin-top:10px;">Berikut ini adalah 4 pilar yang kami siapkan untuk membantumu membangun karir sebagai developer profesional.</p>
+				</div>
+				<section id="dcard">
+				<div class="card" style="width: 18rem;">
+					<img src="img/c1.png" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Academy</h5>
+						<p class="card-text">Belajar menggunakan kurikulum yang telah divalidasi industri IT internasional seperti Google, Microsoft, dan LINE. Diskusikan Code yang kamu tulis dengan para Expert.</p>
+						<a href="#" class="card-link">Lihat Academy</a>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<img src="img/c2.png" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Challenge</h5>
+						<p class="card-text">Uji kemampuanmu dengan mengikuti Challenge yang diselenggarakan oleh perusahaan IT nasional dan multi-nasional.</p>
+						<a href="#" class="card-link">Lihat Challenge</a>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<img src="img/c3.png" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Event</h5>
+						<p class="card-text">Bangun jejaring luas. Temui langsung para pelaku IT untuk saling berbagi dan belajar. Cari Event terdekat dari kotamu.</p>
+						<a href="#" class="card-link">Lihat Event</a>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<img src="img/c4.png" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Job Platform</h5>
+						<p class="card-text">Cari lowongan pekerjaan khusus developer. Untuk perusahaan, temukan talenta digital yang Anda butuhkan. Bersama membangun ekosistem IT Indonesia.</p>
+						<a href="#" class="card-link">Lihat Job Platform</a>
+					</div>
+				</div>
+				</section>
+				<div style="background-color:gray;padding:50px;">
+					<div style="text-align:center;color:white;">
+					<h2>Partner Kami</h2>
+					<p style="margin-top:20px;">Dicoding bekerjasama dengan perusahaan teknologi dunia untuk membangun ekosistem IT Indonesia.</p>
+					</div>
+					<section id="partner">
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p1.png"></a>
+						</div>
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p2.png" width="260"></a>
+						</div>
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p3.png"></a>
+						</div>
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p4.png"></a>
+						</div>
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p5.png"></a>
+						</div>
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p6.png"></a>
+						</div>
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p7.png"></a>
+						</div>
+						<div class="prt">
+							<a href="#" target="_blank"><img src="img/p8.png"></a>
+						</div>
+					</section>
+				</div>
+				<section id="dcard2" style="margin-bottom:100px;margin-top:100px;">
+					<div style="width: 30rem;">
+							<p>Dicoding Academy</p>
+							<h5>Kelas Terpopuler</h5>
+							<p>Kelas dengan peminat terbanyak di Dicoding Academy.</p>
+							<a href="#" class="btn btn-danger">LIHAT ACADEMY</a>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc1.png" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title"><a href="#" class="card-link">Belajar Fundamental Aplikasi Android</a></h5>
+							<p class="card-text">Pelajari skill Android dengan kurikulum terlengkap yang dibutuhkan oleh perusahaan. Mulai dari design pattern, testing, API sampai database.</p>
+							<a href="#" class="card-link">Daftar!</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc2.png" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title"><a href="#" class="card-link">Menjadi Azure Cloud Developer</a></h5>
+							<p class="card-text">Pelajari konsep dan terminologi cloud beserta berbagai layanan Azured Cloud sesuai kebutuhan sertifikasi Azure Developer Associate.</p>
+							<a href="#" class="card-link">Daftar!</a>
+						</div>
+					</div>
+					<div style="width: 30rem;">
+							<p>Dicoding Challenge</p>
+							<h5>Challenge Aktif</h5>
+							<p>Berikut adalah beberapa tantangan yang tersedia dari partner kami.</p>
+							<a href="#" class="btn btn-danger">LIHAT CHALLENGE</a>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc3.png" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title"><a href="#" class="card-link">Kemenparekraf/Baparekraf Digital Challenge - Cip..</a></h5>
+							<p class="card-text">oleh: BaparekrafDeveloperDay<br>Reward: 1000 Pts & 1000 XP</p>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc4.png" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title"><a href="#" class="card-link">IDCamp 2020 Expert Developer Challenge: Inovasi..</a></h5>
+							<p class="card-text">oleh: idcamp<br>Reward: 2000 Pts & 2000 XP</p>
+						</div>
+					</div>
+					<div style="width: 30rem;">
+							<p>Dicoding Event</p>
+							<h5>Event Terdekat</h5>
+							<p>Kembangkan jaringan dan belajar dari developer terbaik melalui seminar/workshop yang difasilitasi oleh partner dan komunitas kami.</p>
+							<a href="#" class="btn btn-danger">LIHAT EVENT</a>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc5.png" class="card-img-top">
+						<div class="card-body">
+							<p>Online Discussion</p>
+							<h5 class="card-title"><a href="#" class="card-link">Online Session 4 November 2020 - Belajar Dasar P..</a></h5>
+							<p class="card-text">Oleh: Dicoding Operational<br><br>04 Nov 2020 14:00<br>Online</p>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc6.png" class="card-img-top">
+						<div class="card-body">
+							<p>Seminar</p>
+							<h5 class="card-title"><a href="#" class="card-link">Dicoding Developer Coaching #8: Android | Membua..</a></h5>
+							<p class="card-text">Oleh: Dicoding Event<br><br>03 Nov 2020 19:00<br>Online</p>
+						</div>
+					</div>
+					<div style="width: 30rem;">
+							<p>Dicoding Job Platform</p>
+							<h5>Lowongan Tersedia</h5>
+							<p>Telusuri lowongan yang sesuai dengan keahlian dan minatmu.</p>
+							<a href="#" class="btn btn-danger">LIHAT JOB PLATFORM</a>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc7.png" class="card-img-top">
+						<div class="card-body">
+							<P>Junior/Middle Programmer</P>
+							<h5 class="card-title"><a href="#" class="card-link">Software Engineer</a></h5>
+							<p class="card-text">Oleh: PT Rute Lintas Indonesia<br>Terbuka Hingga: Nov 6, 2020 </p>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="img/dc8.png" class="card-img-top">
+						<div class="card-body">
+							<p>Junior/Senior Programmer</p>
+							<h5 class="card-title"><a href="#" class="card-link">Web Developer</a></h5>
+							<p class="card-text">Oleh: EDUCA STUDIO<br>Terbuka Hingga: Dec 31, 2020 </p>
+						</div>
+					</div>
+				</section>
+				<div id="buatakun">
+					<h1 style="margin-bottom:50px;">Bergabung Gratis Selamanya!</h1>
+					<a href="#" class="btn btn-danger">BUAT AKUN!</a>
+				</div>
+			</main>
+			<footer style="padding:30px;margin-left:50px;">
+				<div style="float:left;margin-top:30px;margin-left:40px;">
+					<img src="img/f1.png" width="150px"><br>
+					<img src="img/f2.png" width="75px">
+					<img src="img/f3.svg" width="75px">
+				</div>
+				<section id="foot">
+					<div>
+						<p>
+							<b>PERUSAHAAN</b><br>
+							<a href="#">Tentang Kami</a><br>
+							<a href="#">Blog</a><br>
+							<a href="#">Berita Terbaru</a>
+						</p>
+					</div>
+					<div>
+						<p>
+							<b>PROGRAM</b><br>
+							<a href="#">Academy</a><br>
+							<a href="#">Challenge</a><br>
+							<a href="#">Event</a><br>
+							<a href="#">Job</a><br>
+							<a href="#">Rewards</a>
+						</p>
+					</div>
+					<div>
+						<p>
+							<b>SUPPORT</b><br>
+							<a href="#">Bantuan</a><br>
+							<a href="#">FAQ</a><br>
+							<a href="#">Hubungi Kami</a>
+						</p>
+					</div>
+				</section>
+			</footer>
+			<div id="cright">
+				<em style="margin-right:600px;margin-left:100px;">Copyright © 2020 - Dicoding Indonesia. All rights reserved.</em>
+				<a href="#" style="margin-right:7px;">Terms</a>
+				<a href="#" style="margin-left:7px;">Privacy</a>
+			</div>
+		</body>
+	</html>
